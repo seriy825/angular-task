@@ -1,0 +1,12 @@
+<div class="container">
+    <input 
+        [type]="inputType" 
+        placeholder="Enter the password..." 
+        class="input" 
+        [value]="inputValue"
+        (input)="onInputChange($event)"     
+    >
+    <button (click)="togglePassword()" class="btn" type="button">
+        <mat-icon [fontIcon]="showPassword ? 'visibility_off' : 'visibility'"></mat-icon>
+    </button>
+</div>

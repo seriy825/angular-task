@@ -1,0 +1,39 @@
+.validation-messages {
+    width:255px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    .message {
+      border-radius: 8px;
+      height: 5px;
+      width: 33.3%;
+      background-color: #eee;
+      margin: 0 1px;
+      &--clear {
+        transition: all 0.3 ease-in-out;
+        background-color: gray;
+      }
+      &--short {
+        transition: all 0.3 ease-in-out;
+        background-color: red;
+      }
+      &--easy {
+        transition: all 0.3 ease-in-out;
+        background-color: gray;
+        &:nth-child(1) {
+          background-color: red;
+        }
+      }
+      &--medium {
+        transition: all 0.3 ease-in-out;
+        background-color: gray;
+        &:nth-child(-n + 2) {
+          background-color: yellow;
+        }
+      }
+      &--strong {
+        background-color: greenyellow;
+      }
+    }
+  }
+  
